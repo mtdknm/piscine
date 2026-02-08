@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/07 21:28:54 by marvin            #+#    #+#             */
-/*   Updated: 2026/02/07 21:28:54 by marvin           ###   ########.fr       */
+/*   Created: 2026/02/07 22:02:22 by marvin            #+#    #+#             */
+/*   Updated: 2026/02/07 22:02:22 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_ft(int *nbr)
+void ft_ultimate_div_mod(int *a,int *b)
 {
-    *nbr=42;//受け取ったポインタの値を42する
+    int a_origin=*a;
+    int b_origin=*b;
+
+    *a=a_origin/b_origin;
+    *b=a_origin%b_origin;
 }
 
 // int main(void)
 // {
-//     int a=0;
-//     ft_ft(&a);
-//     printf("a:%d\n",a);
+//     int a=7;
+//     int b=2;
+//     ft_ultimate_div_mod(&a,&b);
+//     printf("a:%d,b:%d",a,b);
 
 //     return (0);
 // }

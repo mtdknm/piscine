@@ -36,18 +36,18 @@ void ft_sort_int_tab(int *tab, int size)
     
 }
 
-int main(void)
-{
-    int a[]={5,3,8,1};
-    int size=4;
-    ft_sort_int_tab(a,size);
+// int main(void)
+// {
+//     int a[]={5,3,8,1};
+//     int size=4;
+//     ft_sort_int_tab(a,size);
 
-    int i=0;
-    while(i<size)
-    {
-        printf("%d",a[i]);
-        i++;
-    }
+//     int i=0;
+//     while(i<size)
+//     {
+//         printf("%d",a[i]);
+//         i++;
+//     }
 
-    return (0);
-}
+//     return (0);
+// }

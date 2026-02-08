@@ -22,10 +22,10 @@ void ft_putstr(char *str)
     }
 }
 
-int main(void)
-{
-    char *str="abc";
-    ft_putstr(str);
+// int main(void)
+// {
+//     char *str="abc";
+//     ft_putstr(str);
 
-    return(0);
-}
+//     return(0);
+// }

@@ -22,9 +22,9 @@ int ft_strlen(char *str)
     return (len);
 }
 
-int main(void)
-{
-    char *s="hello";
-    printf("%d\n",ft_strlen(s));
-    return (0);
-}
+// int main(void)
+// {
+//     char *s="hello";
+//     printf("%d\n",ft_strlen(s));
+//     return (0);
+// }
