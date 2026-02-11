@@ -3,38 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 00:34:49 by root              #+#    #+#             */
-/*   Updated: 2026/02/11 10:11:20 by root             ###   ########.fr       */
+/*   Updated: 2026/02/11 20:08:19 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
-    int i;
-    i   =   0;
-    while(str[i]!='\0')
-    {
-        if(str[i]>='A'&&str[i]<='Z')
-        {
-            str[i]+='a'-'A';
-        }
-        i++;
-    }
+	int	i;
 
-    return (str);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] += 'a' - 'A';
+		}
+		i++;
+	}
+	return (str);
 }
 
-int main(void)
+int	main(void)
 {
-    char str1[] = "123HI";
-    char str2[] = "Hello\n";
+	char str1[] = "123HI";
 
-    printf("%s\n", ft_strlowcase(str1));
-    printf("%s\n", ft_strlowcase(str2));
+	char str2[] = "Hello\n";
 
-    return (0);
+	printf("%s\n", ft_strlowcase(str1));
+	printf("%s\n", ft_strlowcase(str2));
+
+	return (0);
 }

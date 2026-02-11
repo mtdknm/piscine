@@ -3,35 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/11 13:00:21 by root             ###   ########.fr       */
+/*   Updated: 2026/02/11 20:12:44 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-    int i;
+	int	i;
 
-    i=0;
-
-    while (s1[i] && s2[i] && s1[i] == s2[i])
-    {
-        i++;
-    }
-
-    return ((unsigned)s1[i]-(unsigned)s2[i]);
-    
-    return (s1[i]-s2[i]);
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+	{
+		i++;
+	}
+	return ((unsigned)s1[i] - (unsigned)s2[i]);
+	return (s1[i] - s2[i]);
 }
 
-int main(void)
+int	main(void)
 {
-    char s1[]="abcde";
-    char s2[]="abcef";
+	char s1[] = "abcde";
+	char s2[] = "abcef";
 
-    printf("%d\n",ft_strcmp(s1,s2));
+	printf("%d\n", ft_strcmp(s1, s2));
 }

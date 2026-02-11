@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 19:17:06 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 00:32:06 by root             ###   ########.fr       */
+/*   Updated: 2026/02/11 18:35:27 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-// int	main(void)
-// {
-// 	printf("%d\n", ft_str_is_alpha("Hello"));
-// 	printf("%d\n", ft_str_is_alpha("123Hi"));
-// 	return (0);
-// }
+int	main(void)
+{
+	printf("%d\n", ft_str_is_alpha("Hello"));
+	printf("%d\n", ft_str_is_alpha("123Hi"));
+	return (0);
+}
