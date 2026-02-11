@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 19:17:06 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 00:32:06 by root             ###   ########.fr       */
+/*   Created: 2026/02/11 00:19:20 by root              #+#    #+#             */
+/*   Updated: 2026/02/11 00:49:05 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include<stdio.h>
 
-int	ft_str_is_alpha(char *str)
+int ft_str_is_numeric(char *str)
 {
-	int	i;
+    int i;
+    i=0;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a'
-					&& str[i] <= 'z')))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
+    while(str[i]!='\0')
+    {
+        if(!(str[i]>='0'&&str[i]<='9'))
+        {
+            return (0);
+        }
+        i++;
+    }
+    return (1);
 }
 
 // int	main(void)
 // {
-// 	printf("%d\n", ft_str_is_alpha("Hello"));
-// 	printf("%d\n", ft_str_is_alpha("123Hi"));
+// 	printf("%d\n", ft_str_is_numeric("123"));
+// 	printf("%d\n", ft_str_is_numeric("123Hi"));
+//     printf("%d\n", ft_str_is_numeric(""));
 // 	return (0);
 // }

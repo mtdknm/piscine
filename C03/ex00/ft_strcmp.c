@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 19:17:06 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 00:32:06 by root             ###   ########.fr       */
+/*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
+/*   Updated: 2026/02/11 13:00:21 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str)
+int ft_strcmp(char *s1, char *s2)
 {
-	int	i;
+    int i;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a'
-					&& str[i] <= 'z')))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
+    i=0;
+
+    while (s1[i] && s2[i] && s1[i] == s2[i])
+    {
+        i++;
+    }
+
+    return ((unsigned)s1[i]-(unsigned)s2[i]);
+    
+    return (s1[i]-s2[i]);
 }
 
-// int	main(void)
-// {
-// 	printf("%d\n", ft_str_is_alpha("Hello"));
-// 	printf("%d\n", ft_str_is_alpha("123Hi"));
-// 	return (0);
-// }
+int main(void)
+{
+    char s1[]="abcde";
+    char s2[]="abcef";
+
+    printf("%d\n",ft_strcmp(s1,s2));
+}

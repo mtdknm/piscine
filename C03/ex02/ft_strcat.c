@@ -1,37 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 19:17:06 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 00:32:06 by root             ###   ########.fr       */
+/*   Created: 2026/02/11 13:12:49 by root              #+#    #+#             */
+/*   Updated: 2026/02/11 13:31:59 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str)
+char *ft_strcat(char *dest, char *src)
 {
-	int	i;
+    int i;
+    int j;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a'
-					&& str[i] <= 'z')))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
+    i=0;
+    j=0;
+
+    while(dest[i])
+    {
+        i++;
+    }
+
+    while(src[j])
+    {
+        dest[i+j]=src[j];
+        j++;
+    }
+
+    dest[i+j]='\0';
+    return (dest);
 }
 
-// int	main(void)
-// {
-// 	printf("%d\n", ft_str_is_alpha("Hello"));
-// 	printf("%d\n", ft_str_is_alpha("123Hi"));
-// 	return (0);
-// }
+int main(void)
+{
+    char str1[20]="Hello";
+    char str2[]="World";
+
+    ft_strcat(str1,str2);
+    printf("%s\n",str1);
+
+    return (0);
+}

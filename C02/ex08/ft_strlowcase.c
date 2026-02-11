@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 19:17:06 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 00:32:06 by root             ###   ########.fr       */
+/*   Created: 2026/02/11 00:34:49 by root              #+#    #+#             */
+/*   Updated: 2026/02/11 10:11:20 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str)
+char *ft_strlowcase(char *str)
 {
-	int	i;
+    int i;
+    i   =   0;
+    while(str[i]!='\0')
+    {
+        if(str[i]>='A'&&str[i]<='Z')
+        {
+            str[i]+='a'-'A';
+        }
+        i++;
+    }
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a'
-					&& str[i] <= 'z')))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
+    return (str);
 }
 
-// int	main(void)
-// {
-// 	printf("%d\n", ft_str_is_alpha("Hello"));
-// 	printf("%d\n", ft_str_is_alpha("123Hi"));
-// 	return (0);
-// }
+int main(void)
+{
+    char str1[] = "123HI";
+    char str2[] = "Hello\n";
+
+    printf("%s\n", ft_strlowcase(str1));
+    printf("%s\n", ft_strlowcase(str2));
+
+    return (0);
+}
