@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/11 20:12:44 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/12 19:27:06 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int	ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-int	main(void)
-{
-	char s1[] = "abcde";
-	char s2[] = "abcef";
+// int	main(void)
+// {
+// 	char s1[] = "abcde";
+// 	char s2[] = "abcef";
 
-	printf("%d\n", ft_strcmp(s1, s2));
-}
+// 	printf("%d\n", ft_strcmp(s1, s2));
+// }

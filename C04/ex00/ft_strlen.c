@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/12 19:27:04 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/12 21:18:43 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/12 21:25:36 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strlen(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (i < n)
+	while (str[i])
 	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
-	return (0);
+	return (i);
 }
 
-// int	main(void)
-// {
-// 	char	s1[] = "abcde";
-// 	char	s2[] = "abcef";
+int	main(void)
+{
+	int		j;
+	char	*str;
 
-// 	printf("%d\n", ft_strncmp(s1, s2, 3));
-// }
+	j = 0;
+	str = "hello";
+	j = ft_strlen(str);
+	printf("%d", j);
+	return (0);
+}
