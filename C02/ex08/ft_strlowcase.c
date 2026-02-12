@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 00:34:49 by root              #+#    #+#             */
-/*   Updated: 2026/02/11 20:08:19 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/12 18:49:22 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-int	main(void)
-{
-	char str1[] = "123HI";
+// int	main(void)
+// {
+// 	char str1[] = "123HI";
 
-	char str2[] = "Hello\n";
+// 	char str2[] = "Hello\n";
 
-	printf("%s\n", ft_strlowcase(str1));
-	printf("%s\n", ft_strlowcase(str2));
+// 	printf("%s\n", ft_strlowcase(str1));
+// 	printf("%s\n", ft_strlowcase(str2));
 
-	return (0);
-}
+// 	return (0);
+// }
