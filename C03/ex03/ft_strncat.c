@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 13:33:40 by root              #+#    #+#             */
-/*   Updated: 2026/02/12 19:40:11 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/13 11:08:21 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,15 @@ char	*ft_strstr(char *str, char *to_find)
 	return (NULL);
 }
 
-int	main(void)
-{
-	char *str1;
-	char *str2;
+// int	main(void)
+// {
+// 	char *str1;
+// 	char *str2;
 
-	str1 = "Hello World";
-	str2 = "World";
+// 	str1 = "Hello World";
+// 	str2 = "World";
 
-	char *result = ft_strstr(str1, str2);
+// 	char *result = ft_strstr(str1, str2);
 
-	printf("%s\n", result);
-}
+// 	printf("%s\n", result);
+// }

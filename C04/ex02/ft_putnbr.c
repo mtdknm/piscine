@@ -1,35 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/13 10:55:47 by root             ###   ########.fr       */
+/*   Created: 2026/02/12 22:19:15 by root              #+#    #+#             */
+/*   Updated: 2026/02/13 00:14:33 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+void ft_putnbr(int nb)
 {
-	unsigned int	i;
+    char a;
 
-	i = 0;
-	while (i < n)
-	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
-	}
-	return (0);
+    if (nb == -2147483648)
+    {
+        write(1, "-2147483648", 11);
+        return;
+    }
+
+    if  (nb<0)
+    {
+        write(1,"-",1);
+        nb=-nb;
+    }
+    if  (nb>=10)
+    {
+        ft_putnbr(nb/10);
+
+    }
+
+    a='0'+(nb%10);
+    write(1,&a,1);
 }
 
-// int	main(void)
+// int main(void)
 // {
-// 	char	s1[] = "abcde";
-// 	char	s2[] = "abcef";
+//     int i;
+//     i=657;
 
-// 	printf("%d\n", ft_strncmp(s1, s2, 3));
+//     ft_putnbr(i);
+
+//     return (0);
 // }

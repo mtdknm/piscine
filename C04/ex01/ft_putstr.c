@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/12 21:18:43 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/13 00:14:43 by root             ###   ########.fr       */
+/*   Created: 2026/02/12 22:09:21 by root              #+#    #+#             */
+/*   Updated: 2026/02/12 23:43:10 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_strlen(char *str)
+void ft_putstr(char *str)
 {
-	int	i;
+    int i;
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
+    i=0;
+
+    while(str[i]!='\0')
+    {
+        write(1,&str[i],1);
+        i++;
+    }
+
 }
 
-// int	main(void)
+// int main(void)
 // {
-// 	int		j;
-// 	char	*str;
+//     char str[]="hello";
+    
+//     ft_putstr(str);
 
-// 	j = 0;
-// 	str = "hello";
-// 	j = ft_strlen(str);
-// 	printf("%d", j);
-// 	return (0);
+//     return (0);
 // }
