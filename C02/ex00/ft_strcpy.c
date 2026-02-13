@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 18:43:31 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/11 18:35:17 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/13 21:05:13 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,17 @@ char	*ft_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
 
-int	main(void)
-{
-	char	*src;
-	char	dest[10];
+// int	main(void)
+// {
+// 	char	*src;
+// 	char	dest[10];
 
-	src = "hello";
-	ft_strcpy(dest, src);
-	printf("dest:%s", dest);
-	return (0);
-}
+// 	src = "hello";
+// 	ft_strcpy(dest, src);
+// 	printf("dest:%s", dest);
+// 	return (0);
+// }

@@ -3,38 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 22:19:15 by root              #+#    #+#             */
-/*   Updated: 2026/02/13 00:14:33 by root             ###   ########.fr       */
+/*   Updated: 2026/02/13 19:27:31 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
-    char a;
+	char	a;
 
-    if (nb == -2147483648)
-    {
-        write(1, "-2147483648", 11);
-        return;
-    }
-
-    if  (nb<0)
-    {
-        write(1,"-",1);
-        nb=-nb;
-    }
-    if  (nb>=10)
-    {
-        ft_putnbr(nb/10);
-
-    }
-
-    a='0'+(nb%10);
-    write(1,&a,1);
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+	}
+	a = '0' + (nb % 10);
+	write(1, &a, 1);
 }
 
 // int main(void)
