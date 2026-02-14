@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/13 19:25:08 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/13 19:30:03 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/13 10:37:23 by root              #+#    #+#             */
+/*   Updated: 2026/02/13 10:37:23 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi_base(char *str, char *base)
-{
-	ft_
-}
