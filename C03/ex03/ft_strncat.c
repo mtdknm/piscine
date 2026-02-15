@@ -3,48 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 13:33:40 by root              #+#    #+#             */
-/*   Updated: 2026/02/13 11:08:21 by root             ###   ########.fr       */
+/*   Updated: 2026/02/15 19:52:27 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	int	i;
 	int	j;
 
-	if (!to_find[0])
-		return (str);
 	i = 0;
-	while (str[i])
-	{
-		j = 0;
-		while (str[i + j] && str[i + j] == to_find[j])
-		{
-			j++;
-			if (!to_find[j])
-			{
-				return (&str[i]);
-			}
-		}
+	j = 0;
+	while (dest[i])
 		i++;
+	while (src[j] && j < nb)
+	{
+		dest[i + j] = src[j];
+		j++;
 	}
-	return (NULL);
+	dest[i + j] = '\0';
+	return (dest);
 }
 
 // int	main(void)
 // {
-// 	char *str1;
-// 	char *str2;
+// 	char str1[] = "Hello";
+// 	char str2[] = "World";
 
-// 	str1 = "Hello World";
-// 	str2 = "World";
-
-// 	char *result = ft_strstr(str1, str2);
-
-// 	printf("%s\n", result);
+// 	printf("%s\n", ft_strncat(str1, str2, 3));
+// 	return (0);
 // }

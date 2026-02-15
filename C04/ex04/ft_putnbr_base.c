@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 09:40:44 by root              #+#    #+#             */
-/*   Updated: 2026/02/13 19:28:07 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/15 15:53:17 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,31 +64,25 @@ void	ft_putnbr_base(int nbr, char *base)
 	write(1, &r, 1);
 }
 
-int	main(void)
-{
-	write(1, "Decimal:\n", 9);
-	ft_putnbr_base(42, "0123456789");
-	write(1, "\n\n", 2);
-
-	write(1, "Binary:\n", 8);
-	ft_putnbr_base(42, "01");
-	write(1, "\n\n", 2);
-
-	write(1, "Hex:\n", 5);
-	ft_putnbr_base(255, "0123456789ABCDEF");
-	write(1, "\n\n", 2);
-
-	write(1, "Octal(custom chars):\n", 21);
-	ft_putnbr_base(42, "poneyvif");
-	write(1, "\n\n", 2);
-
-	write(1, "Negative:\n", 10);
-	ft_putnbr_base(-42, "0123456789");
-	write(1, "\n\n", 2);
-
-	write(1, "Invalid base (should print nothing):\n", 37);
-	ft_putnbr_base(42, "0");
-	write(1, "\n", 1);
-
-	return (0);
-}
+// int	main(void)
+// {
+// 	write(1, "Decimal:\n", 9);
+// 	ft_putnbr_base(42, "0123456789");
+// 	write(1, "\n\n", 2);
+// 	write(1, "Binary:\n", 8);
+// 	ft_putnbr_base(42, "01");
+// 	write(1, "\n\n", 2);
+// 	write(1, "Hex:\n", 5);
+// 	ft_putnbr_base(255, "0123456789ABCDEF");
+// 	write(1, "\n\n", 2);
+// 	write(1, "Octal(custom chars):\n", 21);
+// 	ft_putnbr_base(42, "poneyvif");
+// 	write(1, "\n\n", 2);
+// 	write(1, "Negative:\n", 10);
+// 	ft_putnbr_base(-42, "0123456789");
+// 	write(1, "\n\n", 2);
+// 	write(1, "Invalid base (should print nothing):\n", 37);
+// 	ft_putnbr_base(42, "0");
+// 	write(1, "\n", 1);
+// 	return (0);
+// }

@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_interative_power.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 11:42:05 by root              #+#    #+#             */
-/*   Updated: 2026/02/15 11:54:20 by root             ###   ########.fr       */
+/*   Updated: 2026/02/15 15:55:32 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_interative_power(int nb, int power)
+int	ft_interative_power(int nb, int power)
 {
-    int i;
-    i=1;
-    if(power<0)
-        return (0);
-    while(power>0)
-    {
-        i*=nb;
-        power--;
-    }
-    return (i);
+	int	i;
+
+	i = 1;
+	if (power < 0)
+		return (0);
+	while (power > 0)
+	{
+		i *= nb;
+		power--;
+	}
+	return (i);
 }
 
 // #include <stdio.h>

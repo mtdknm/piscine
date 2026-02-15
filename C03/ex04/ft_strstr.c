@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 14:46:38 by root              #+#    #+#             */
-/*   Updated: 2026/02/12 19:42:59 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/15 19:57:55 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ char	*ft_strstr(char *str, char *to_find)
 	return (0);
 }
 
-// int main(void)
+// int	main(void)
 // {
-//     char s[]="Hello World";
+// 	char s[] = "Hello World";
 
-//     printf("%s\n",ft_strstr(s,"World"));
-//     printf("%s\n",ft_strstr(s,"Hello"));
-//     printf("%s\n",ft_strstr(s,"abc"));
-//     printf("%s\n",ft_strstr(s,""));
+// 	printf("%s\n", ft_strstr(s, "World"));
+// 	printf("%s\n", ft_strstr(s, "Hello"));
+// 	printf("%s\n", ft_strstr(s, "abc"));
+// 	printf("%s\n", ft_strstr(s, ""));
 
-//     return (0);
+// 	return (0);
 // }

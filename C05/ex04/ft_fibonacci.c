@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/15 18:52:01 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/15 16:04:28 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/15 17:41:07 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_fibonacci(int index)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (i < n && (s1[i] != '\0' || s2[i] != '\0'))
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
-	}
-	return (0);
+	if (index < 0)
+		return (-1);
+	if (index == 0)
+		return (0);
+	if (index == 1)
+		return (1);
+	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
+
+// #include <stdio.h>
 
 // int	main(void)
 // {
-// 	char	s1[] = "abcde";
-// 	char	s2[] = "abcef";
+// 	int	i;
 
-// 	printf("%d\n", ft_strncmp(s1, s2, 5));
+// 	i = -1;
+// 	while (i <= 10)
+// 	{
+// 		printf("ft_fibonacci(%d) = %d\n", i, ft_fibonacci(i));
+// 		i++;
+// 	}
+// 	return (0);
 // }

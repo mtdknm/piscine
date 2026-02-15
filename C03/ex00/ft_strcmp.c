@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 12:41:06 by root              #+#    #+#             */
-/*   Updated: 2026/02/12 19:27:06 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/15 18:46:58 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-	return ((unsigned)s1[i] - (unsigned)s2[i]);
 	return (s1[i] - s2[i]);
 }
 
