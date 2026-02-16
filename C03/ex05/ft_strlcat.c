@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 22:47:07 by root              #+#    #+#             */
-/*   Updated: 2026/02/13 11:08:12 by root             ###   ########.fr       */
+/*   Updated: 2026/02/15 23:15:41 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 // 	char			buf[10] = "Hello";
 // 	unsigned int	ret;
 
-// 	ret = ft_strlcat(buf, "World", 3);
+// 	ret = ft_strlcat(buf, "World", 10);
 // 	printf("result = %s\n", buf);
 // 	printf("return = %u\n", ret);
 // 	return (0);
