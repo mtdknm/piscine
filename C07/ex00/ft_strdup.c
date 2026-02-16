@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/15 16:04:28 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/16 13:48:01 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/16 14:02:31 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/16 18:31:27 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+char	*ft_strdup(char *src)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
-		return (0);
-	if (index == 1)
-		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	int i;
+	char *dup;
+
+	while (src[i])
+		i++;
+	dup = malloc(i + 1);
+	if (!dup)
+		return (NULL);
+	i = 0;
+	while (src[i])
+	{
+		dup[i] = src[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int	i;
-
-// 	i = -1;
-// 	while (i <= 10)
-// 	{
-// 		printf("ft_fibonacci(%d) = %d\n", i, ft_fibonacci(i));
-// 		i++;
-// 	}
-// 	return (0);
-// }

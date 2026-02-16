@@ -3,26 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 23:17:11 by root              #+#    #+#             */
-/*   Updated: 2026/02/15 23:38:51 by root             ###   ########.fr       */
+/*   Updated: 2026/02/16 13:49:44 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_sqrt(int nb)
+int	ft_sqrt(int nb)
 {
-    int i;
-    if (nb <= 0)
-        return (0);
-    i=1;
-    while(i*i<=nb)
-    {
-        if(i*i==nb)
-            return (i);
-        i++;
-    }
-    return (0);
+	int	i;
+
+	if (nb <= 0)
+		return (0);
+	i = 1;
+	while (i * i <= nb)
+	{
+		if (i * i == nb)
+			return (i);
+		i++;
+	}
+	return (0);
 }
 
 // #include <stdio.h>
