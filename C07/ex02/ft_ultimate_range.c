@@ -1,60 +1,57 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/16 11:12:46 by root              #+#    #+#             */
-/*   Updated: 2026/02/18 16:25:56 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/18 15:49:07 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/18 15:59:22 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*ft_range(int min, int max)
+int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	size;
-	int	*range;
+	int	*a;
 	int	i;
 
 	if (min >= max)
-		return (NULL);
+	{
+		*range = NULL;
+		return (0);
+	}
 	size = max - min;
-	range = (int *)malloc(sizeof(int) * size);
-	if (range == NULL)
-		return (NULL);
+	a = malloc(sizeof(int) * size);
+	if (a == NULL)
+	{
+		*range = NULL;
+		return (-1);
+	}
 	i = 0;
 	while (i < size)
 	{
-		range[i] = min;
+		a[i] = min;
 		min++;
 		i++;
 	}
-	return (range);
+	*range = a;
+	return (size);
 }
 
 // #include <stdio.h>
 
-// int	*ft_range(int min, int max);
+// int	ft_ultimate_range(int **range, int min, int max);
 
 // int	main(void)
 // {
 // 	int	*arr;
-// 	int	max;
-// 	int	min;
-// 	int	i;
 // 	int	size;
+// 	int	i;
 
-// 	max = 6;
-// 	min = 3;
-// 	arr = ft_range(min, max);
-// 	if (!arr)
-// 	{
-// 		printf("NULL returned\n");
-// 		return (1);
-// 	}
-// 	size = max - min;
+// 	size = ft_ultimate_range(&arr, 3, 6);
 // 	i = 0;
 // 	while (i < size)
 // 	{

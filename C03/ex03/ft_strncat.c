@@ -6,7 +6,7 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 13:33:40 by root              #+#    #+#             */
-/*   Updated: 2026/02/16 16:35:19 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/18 15:04:40 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest);
 }
 
-int	main(void)
-{
-	char str1[] = "Hello";
-	char str2[] = "World";
+// int	main(void)
+// {
+// 	char str1[] = "Hello";
+// 	char str2[] = "World";
 
-	printf("%s\n", ft_strncat(str1, str2, 3));
-	return (0);
-}
+// 	printf("%s\n", ft_strncat(str1, str2, 3));
+// 	return (0);
+// }
