@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/19 22:56:27 by root              #+#    #+#             */
-/*   Updated: 2026/02/19 23:03:59 by root             ###   ########.fr       */
+/*   Created: 2026/02/19 23:21:36 by root              #+#    #+#             */
+/*   Updated: 2026/02/19 23:21:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+#include <stdio.h>
+#include "ft_abs.h"
 
-# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
-
-#endif
+int main(void)
+{
+    printf("%d\n", ABS(-42));
+    printf("%d\n", ABS(42));
+    printf("%d\n", ABS(0));
+    printf("%d\n", ABS(-10 + 3));
+    return 0;
+}
