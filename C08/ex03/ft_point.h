@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/20 10:41:45 by root              #+#    #+#             */
-/*   Updated: 2026/02/21 17:06:21 by root             ###   ########.fr       */
+/*   Created: 2026/02/21 19:02:58 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/21 19:03:11 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
 # define FT_POINT_H
+
+typedef struct s_point
+{
+	int	x;
+	int	y;
+}	t_point;
 
 #endif

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_strs_to_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/19 19:39:18 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/21 18:13:52 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/21 18:15:05 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/21 19:15:21 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
+#include <stdlib.h>
 
-# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
-
-#endif
+struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
+{
+	int i;
+}
