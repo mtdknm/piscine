@@ -3,16 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/19 22:56:27 by root              #+#    #+#             */
-/*   Updated: 2026/02/21 17:06:26 by root             ###   ########.fr       */
+/*   Created: 2026/02/19 19:39:18 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/19 19:39:18 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
-
-# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
-
-#endif
+#define ABS(Value)

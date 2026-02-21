@@ -21,6 +21,7 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
+
 int	ft_is_base_valid(char *base)
 {
 	int	i;
@@ -62,7 +63,7 @@ int	ft_atoi_base(char *str, char *base)
 		sign++;
 	}
 	base_len = ft_strlen(base);
-	while ()
+	while(str[]&&idx!=-1)
 	{
 		result = result
 	}
