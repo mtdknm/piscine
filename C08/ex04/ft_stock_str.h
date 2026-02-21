@@ -6,14 +6,13 @@
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 18:57:39 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/21 19:54:09 by kmatsuda         ###   ########.fr       */
+/*   Updated: 2026/02/21 20:00:40 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 typedef struct s_stock_str
 {
 	int	size;
-
 	char	*str;
 	char	*copy;
 }	t_stock_str;
