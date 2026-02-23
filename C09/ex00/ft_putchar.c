@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_boolean.h                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/19 17:39:55 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/23 15:52:16 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/23 16:16:09 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/23 16:18:37 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_BOOLEAN_H
-# define FT_BOOLEAN_H
-# include <unistd.h>
+#include <unistd.h>
 
-typedef enum e_bool
+void	ft_putchar(char c)
 {
-	FALSE = 0,
-	TRUE = 1
-}	t_bool;
-
-# define EVEN(nbr) ((nbr) % 2 == 0)
-
-# define EVEN_MSG "I have an even number of arguments.\n"
-# define ODD_MSG "I have an odd number of arguments.\n"
-
-# define SUCCESS 0
-
-#endif
+	write(1, &c, 1);
+}

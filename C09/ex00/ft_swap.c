@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_boolean.h                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuda <kmatsuda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/19 17:39:55 by kmatsuda          #+#    #+#             */
-/*   Updated: 2026/02/23 15:52:16 by kmatsuda         ###   ########.fr       */
+/*   Created: 2026/02/23 16:21:59 by kmatsuda          #+#    #+#             */
+/*   Updated: 2026/02/23 16:22:06 by kmatsuda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_BOOLEAN_H
-# define FT_BOOLEAN_H
-# include <unistd.h>
-
-typedef enum e_bool
+void	ft_swap(int *a, int *b)
 {
-	FALSE = 0,
-	TRUE = 1
-}	t_bool;
+	int tmp;
 
-# define EVEN(nbr) ((nbr) % 2 == 0)
-
-# define EVEN_MSG "I have an even number of arguments.\n"
-# define ODD_MSG "I have an odd number of arguments.\n"
-
-# define SUCCESS 0
-
-#endif
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
