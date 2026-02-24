@@ -1,0 +1,3 @@
+#include <unistd.h>
+#include "../includes/ft.h"
+void ft_putstr(char *str){ while (*str) write(1, str++, 1); }
